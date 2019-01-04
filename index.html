@@ -10,10 +10,73 @@
     .Name{color:grey; background-color:	#e6e6e6; display:inline-block; 
       margin-left: 45%; padding: 0% 2% 0% 2%; border:#666666; border-style: groove; border-width:6px;}
    
-    .sidemenu{color:grey; background-color:	#e6e6e6; width:15%; border:#666666; border-style: groove; 
-      border-width:4px; font-size:20px;  padding: .5% 2.6% .5% 2.6%; position:; text-align: center; 
-      list-style:none}
+    
+    
   
+    input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+  
+    #parent1{display:flex;}
+    .container1{ float:left; width:15%;   
+      .sidemenu{padding: .5% 2.6% .5% 2.6%;} color:grey; background-color:	#e6e6e6; 
+      border:#666666; border-style: groove; 
+      border-width:4px; font-size:20px; text-align: center; 
+      list-style:none}
+    
+    .info{float:right;
+  width: 85%}
+    
+button {
+  background-color: pink;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: #666666;
+  border-style: groove;
+  cursor: pointer;
+  width: 100%;
+border-width:4px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+    
 {box-sizing: border-box}
 body {font-family: Verdana, sans-serif; margin:0}
 .mySlides {display: none}
@@ -26,7 +89,7 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
-/* Next & previous buttons */
+    
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -42,7 +105,7 @@ img {vertical-align: middle;}
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -110,8 +173,38 @@ img {vertical-align: middle;}
 </style>
 </head>
 <body>
+  
+  
+  
+  
+  
+  
+  <div class="Name">
+<h1> The Art Canvas </h1>
+    </div>
+  <ul>
+    
+    <div id:"parent";>
+      <div id:"container1">
+    <div class="sidemenu">
+      <li>Sign In/Sign Up</div></li>
+  <div class="sidemenu">
+      <li>Featured Artists</div></li>
+  <div class="sidemenu">
+<li>Critiques</div></li>
+<div class="sidemenu">
+    <li>About Us</div></li>
 
-<div class="slideshow-container">
+  <div class="info">
+    <h2> About Us</h2>
+</div>
+  </div>
+
+    
+    
+    
+    
+    <div class="slideshow-container">
 
 <div class="mySlides fade">
   <div class="numbertext">1 / 3</div>
@@ -181,18 +274,26 @@ function showSlides(n) {
 </script>
 
     
-  <div class="Name">
-<h1> The Art Canvas </h1>
-    </div>
-  <ul>
-    <div class="sidemenu">
-      <li>Sign In/Sign Up</div></li>
-  <div class="sidemenu">
-      <li>Featured Artists</div></li>
-  <div class="sidemenu">
-<li>Critiques</div></li>
-<div class="sidemenu">
-    <li>About Us</div></li>
+ 
+
+<h3>Member Sign Up Form</h3> 
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pw" required>
+        
+    <button type="submit">Sign Up</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+   
+  </div>
+</form>
   </ul>
 </body>
 </html>
